@@ -1,24 +1,10 @@
-import "./App.css";
+import * as React from "react";
+import { useEffect, useState } from "react";
+import { Businesses } from "./fakeBusiness";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [biz, setBiz] = useState(Businesses);
+  return <div>{console.log(Businesses[0].name)}</div>;
 }
 
 export default App;

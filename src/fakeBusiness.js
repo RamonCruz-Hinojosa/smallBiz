@@ -1,4 +1,4 @@
-export let Businesses = [
+export const Businesses = [
   {
     name: "business1",
     description: "does stuff",
